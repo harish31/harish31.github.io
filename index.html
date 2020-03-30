@@ -1,4 +1,6 @@
 Hello World
+<html>
+<body>
 <table border=1 width='100%' align='centre'><tr bgcolor='#000080'><th><font COLOR='#FFFFFF'><h3>ScopeRetail Blocker & Critical Count List</h3></th></font>
 <tr>
 <th> SOP </th>
@@ -10,3 +12,4 @@ Hello World
 <tr><td>BOP</td><td>$(curl -X GET -u scopeoms:scopeoms "http://scopesonar.centralus.cloudapp.azure.com/api/issues/search?projectKeys=com.scoperetail.oms:bulk-order-processor&severities=BLOCKER&statuses=OPEN" | jq '.total')</td><td>$(curl -X GET -u scopeoms:scopeoms "http://scopesonar.centralus.cloudapp.azure.com/api/issues/search?projectKeys=com.scoperetail.oms:bulk-order-processor&severities=CRITICAL&statuses=OPEN" | jq '.total')</td></tr>
 <tr><td>auditor</td><td>$(curl -X GET -u scopeoms:scopeoms "http://scopesonar.centralus.cloudapp.azure.com/api/issues/search?projectKeys=com.scoperetail:supplier-order-processor&severities=BLOCKER&statuses=OPEN" | jq '.total')</td><td>$(curl -X GET -u scopeoms:scopeoms "http://scopesonar.centralus.cloudapp.azure.com/api/issues/search?projectKeys=com.scoperetail:supplier-order-processor&severities=CRITICAL&statuses=OPEN" | jq '.total')</td></tr>
 <tr><td>auditor</td><td>$(curl -X GET -u scopeoms:scopeoms "http://scopesonar.centralus.cloudapp.azure.com/api/issues/search?projectKeys=com.scoperetail:supplier-order-processor&severities=BLOCKER&statuses=OPEN" | jq '.total')</td><td>$(curl -X GET -u scopeoms:scopeoms "http://scopesonar.centralus.cloudapp.azure.com/api/issues/search?projectKeys=com.scoperetail:supplier-order-processor&severities=CRITICAL&statuses=OPEN" | jq '.total')</td></tr>
+</table></body></html>
